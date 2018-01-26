@@ -80,5 +80,6 @@
         "options": "",
         "fileName": ".tags"
     },
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "editor.rulers": [128]
 }
