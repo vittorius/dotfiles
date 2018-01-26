@@ -1,0 +1,38 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "guard",
+      "type": "shell",
+      "command": "guard",
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "dedicated"
+      },
+      "isBackground": true,
+      "problemMatcher": {
+        "fileLocation": ["relative", "${workspaceFolder}"],
+        "pattern":[
+          {
+            "regexp": "^\\s{2,7}(.+)$", // capturing error message from both RSpec failures and exceptions
+            "message": 1
+          },
+          {
+            "regexp": "^\\s*#\\s\\.(.+):(\\d+):in\\s+`?(.+)'$", // capturing file and line
+            "file": 1,
+            "line": 2
+          }
+        ],
+        "background": {
+          "beginsPattern": "^\\d{2}:\\d{2}:\\d{2} - INFO - Running",
+          "endsPattern": "^Finished in"
+        }
+      }
+    }
+  ]
+}

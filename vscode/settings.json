@@ -1,0 +1,84 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "code-runner.executorMapByFileExtension": {
+        ".vb": "cd $dir && vbc /nologo $fileName && $dir$fileNameWithoutExt",
+        ".vbs": "cscript //Nologo",
+        ".scala": "scala",
+        ".jl": "julia",
+        ".cr": "crystal",
+        ".ml": "ocaml",
+        ".ex": "elixir",
+        ".exs": "elixir",
+        ".hx": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        ".rkt": "racket",
+        ".ahk": "autohotkey"
+    },
+    "code-runner.executorMap": {
+        "elixir": "elixir",
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python",
+        "perl": "perl",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "ahk": "autohotkey"
+    },
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.shell.osx": "/bin/bash",
+    "workbench.activityBar.visible": false,
+    "editor.tabSize": 2,
+    "code-runner.clearPreviousOutput": true,
+    "workbench.editor.enablePreview": false,
+    "emmet.syntaxProfiles": {
+        "javascript": "html"
+    },
+    "search.quickOpen.includeSymbols": true,
+    "window.zoomLevel": 0,
+
+    "eslint.workingDirectories": ["./src"],
+    "explorer.decorations.colors": false,
+    "workbench.colorTheme": "Monokai-EasyLight",
+    "explorer.openEditors.visible": 0,
+    "editor.fontSize": 13,
+    "editor.minimap.enabled": false,
+    "terminal.integrated.fontSize": 13,
+    "workbench.statusBar.visible": true,
+    "extensions.ignoreRecommendations": false,
+	"ruby.rubocop.executePath": "/Users/vittorius/.rbenv/shims/",
+    "workbench.colorCustomizations": {
+        "editorInfo.foreground": "#af1f1f", // for linters
+        "statusBar.background": "#302e2e",
+        "statusBar.foreground": "#beb8b8"
+    },
+    "ctags": {
+        "executePath": "~/.vscode_ruby_ctags/vscode_ruby_ctags",
+        "options": "",
+        "fileName": ".tags"
+    },
+    "files.trimTrailingWhitespace": true
+}

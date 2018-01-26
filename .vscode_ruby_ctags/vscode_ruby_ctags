@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+{ bundle show --paths; pwd; } | cat | xargs ~/.rbenv/shims/ripper-tags --tag-file=.tags --recursive --force --exclude=/assets/ --exclude=.bundle --exclude=.git/ --exclude=coverage/ --exclude=.arcanist-extensions/ --exclude=log/ --exclude=tmp/ --exclude=bin/
+
